@@ -1,0 +1,1 @@
+# swote-Analyse
