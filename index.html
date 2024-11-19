@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWOT-Analyse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 700px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 15px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        td:hover {
+            background-color: #d7f0d3;
+        }
+
+        td.editable {
+            cursor: pointer;
+        }
+
+        .label-cell {
+            background-color: #e3f2fd;
+            font-weight: bold;
+            color: #1a73e8;
+        }
+
+        .heading-cell {
+            background-color: #fce4ec;
+            font-weight: bold;
+            color: #d81b60;
+        }
+
+        .combo-cell {
+            background-color: #fff3e0;
+            font-weight: bold;
+            color: #ef6c00;
+        }
+    </style>
+</head>
+<body>
+    <h1>SWOT-Analyse</h1>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th></th>
+                <th class="label-cell">Unternehmen</th>
+                <th class="label-cell">Umwelt</th>
+            </tr>
+            <tr>
+                <th class="label-cell">Stärken</th>
+                <td class="editable" contenteditable="true"></td>
+                <td class="editable" contenteditable="true"></td>
+            </tr>
+            <tr>
+                <th class="label-cell">Schwächen</th>
+                <td class="editable" contenteditable="true"></td>
+                <td class="editable" contenteditable="true"></td>
+            </tr>
+            <tr>
+                <th class="label-cell">Chancen</th>
+                <td class="editable" contenteditable="true"></td>
+                <td class="editable" contenteditable="true"></td>
+            </tr>
+            <tr>
+                <th class="combo-cell" colspan="3">Unternehmen / Umwelt</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
